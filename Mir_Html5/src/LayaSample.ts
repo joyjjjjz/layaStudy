@@ -10,7 +10,6 @@ class GameMain{
     private m_Sprite:Laya.Sprite = null;
     constructor()
     {
-        Laya.init(600,400);
         //Laya.timer.loop(5000,this,this.onTimerStart);
  
        // this.onTimerStart();

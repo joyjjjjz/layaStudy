@@ -1,0 +1,1 @@
+{"version":3,"file":"BaseMsgPack.js","sourceRoot":"","sources":["../../../src/ClientMsgPack/BaseMsgPack.ts"],"names":[],"mappings":"AAAA,IAAO,aAAa,CAenB;AAfD,WAAO,aAAa;IAEhB;QAAA;QAYA,CAAC;QAVU,+BAAS,GAAhB;YAEI,MAAM,CAAC,IAAI,CAAC;QAChB,CAAC;QACM,iCAAW,GAAlB,UAAmB,IAAe;QAGlC,CAAC;QAGL,kBAAC;IAAD,CAAC,AAZD,IAYC;IAZY,yBAAW,cAYvB,CAAA;AACL,CAAC,EAfM,aAAa,KAAb,aAAa,QAenB"}

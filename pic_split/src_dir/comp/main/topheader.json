@@ -1,0 +1,113 @@
+{
+    "frames": {
+        "image_bindgold.png": {
+            "frame": {
+                "h": 23,
+                "idx": 0,
+                "w": 20,
+                "x": 131,
+                "y": 22
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 23,
+                "w": 20
+            },
+            "spriteSourceSize": {
+                "h": 23,
+                "w": 20,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_bindyuanbao.png": {
+            "frame": {
+                "h": 21,
+                "idx": 0,
+                "w": 24,
+                "x": 131,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 21,
+                "w": 24
+            },
+            "spriteSourceSize": {
+                "h": 21,
+                "w": 24,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_gold.png": {
+            "frame": {
+                "h": 19,
+                "idx": 0,
+                "w": 17,
+                "x": 0,
+                "y": 26
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 19,
+                "w": 17
+            },
+            "spriteSourceSize": {
+                "h": 19,
+                "w": 17,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_textbg.png": {
+            "frame": {
+                "h": 25,
+                "idx": 0,
+                "w": 130,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 25,
+                "w": 130
+            },
+            "spriteSourceSize": {
+                "h": 25,
+                "w": 130,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_yuanbao.png": {
+            "frame": {
+                "h": 17,
+                "idx": 0,
+                "w": 23,
+                "x": 0,
+                "y": 46
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 17,
+                "w": 23
+            },
+            "spriteSourceSize": {
+                "h": 17,
+                "w": 23,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "topheader.png",
+        "prefix": "comp/main/topheader/"
+    }
+}

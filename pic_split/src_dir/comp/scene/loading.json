@@ -1,0 +1,29 @@
+{
+    "frames": {
+        "Game_Start_Desc.png": {
+            "frame": {
+                "h": 47,
+                "idx": 0,
+                "w": 440,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 47,
+                "w": 440
+            },
+            "spriteSourceSize": {
+                "h": 47,
+                "w": 440,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "loading.png",
+        "prefix": "comp/scene/loading/"
+    }
+}

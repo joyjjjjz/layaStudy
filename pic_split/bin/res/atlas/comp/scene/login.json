@@ -1,0 +1,50 @@
+{
+    "frames": {
+        "btn_enter.png": {
+            "frame": {
+                "h": 90,
+                "idx": 0,
+                "w": 65,
+                "x": 0,
+                "y": 246
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 90,
+                "w": 65
+            },
+            "spriteSourceSize": {
+                "h": 90,
+                "w": 65,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_login.png": {
+            "frame": {
+                "h": 245,
+                "idx": 0,
+                "w": 315,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 245,
+                "w": 315
+            },
+            "spriteSourceSize": {
+                "h": 245,
+                "w": 315,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "login.png",
+        "prefix": "comp/scene/login/"
+    }
+}

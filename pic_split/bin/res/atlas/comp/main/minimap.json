@@ -1,0 +1,29 @@
+{
+    "frames": {
+        "image_bg.png": {
+            "frame": {
+                "h": 70,
+                "idx": 0,
+                "w": 159,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 70,
+                "w": 159
+            },
+            "spriteSourceSize": {
+                "h": 70,
+                "w": 159,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "minimap.png",
+        "prefix": "comp/main/minimap/"
+    }
+}

@@ -1,0 +1,218 @@
+{
+    "frames": {
+        "bg_header.png": {
+            "frame": {
+                "h": 128,
+                "idx": 0,
+                "w": 305,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 128,
+                "w": 305
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 305,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "button_buff.png": {
+            "frame": {
+                "h": 31,
+                "idx": 0,
+                "w": 68,
+                "x": 155,
+                "y": 171
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 31,
+                "w": 68
+            },
+            "spriteSourceSize": {
+                "h": 31,
+                "w": 68,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "button_pk.png": {
+            "frame": {
+                "h": 31,
+                "idx": 0,
+                "w": 68,
+                "x": 224,
+                "y": 175
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 31,
+                "w": 68
+            },
+            "spriteSourceSize": {
+                "h": 31,
+                "w": 68,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_fight.png": {
+            "frame": {
+                "h": 34,
+                "idx": 0,
+                "w": 79,
+                "x": 306,
+                "y": 95
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 34,
+                "w": 79
+            },
+            "spriteSourceSize": {
+                "h": 34,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_fightbg.png": {
+            "frame": {
+                "h": 41,
+                "idx": 0,
+                "w": 231,
+                "x": 0,
+                "y": 129
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 41,
+                "w": 231
+            },
+            "spriteSourceSize": {
+                "h": 41,
+                "w": 231,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "image_tao.png": {
+            "frame": {
+                "h": 94,
+                "idx": 0,
+                "w": 94,
+                "x": 306,
+                "y": 0
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 94,
+                "w": 94
+            },
+            "spriteSourceSize": {
+                "h": 94,
+                "w": 94,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "progressBar_hp$bar.png": {
+            "frame": {
+                "h": 14,
+                "idx": 0,
+                "w": 169,
+                "x": 232,
+                "y": 130
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 14,
+                "w": 169
+            },
+            "spriteSourceSize": {
+                "h": 14,
+                "w": 169,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "progressBar_hp.png": {
+            "frame": {
+                "h": 14,
+                "idx": 0,
+                "w": 169,
+                "x": 232,
+                "y": 145
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 14,
+                "w": 169
+            },
+            "spriteSourceSize": {
+                "h": 14,
+                "w": 169,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "progressBar_mp$bar.png": {
+            "frame": {
+                "h": 14,
+                "idx": 0,
+                "w": 154,
+                "x": 232,
+                "y": 160
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 14,
+                "w": 154
+            },
+            "spriteSourceSize": {
+                "h": 14,
+                "w": 154,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        "progressBar_mp.png": {
+            "frame": {
+                "h": 14,
+                "idx": 0,
+                "w": 154,
+                "x": 0,
+                "y": 171
+            },
+            "rotated": false,
+            "sourceSize": {
+                "h": 14,
+                "w": 154
+            },
+            "spriteSourceSize": {
+                "h": 14,
+                "w": 154,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    },
+    "meta": {
+        "image": "header.png",
+        "prefix": "comp/main/header/"
+    }
+}

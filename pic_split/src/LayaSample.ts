@@ -54,37 +54,36 @@ class GameMain{
             return
         
         const data = this.datas[this.index]
-        const pic = data[0]
-        const h = data[1]
-        const w = data[2]
-        var loadPic 
-        // loadPic = "comp/scene/login/btn_enter.png"
-        loadPic = this.prefix + pic
+        const loadPic = this.prefix + data[0]
         this.sp = new Sprite();
         this.sp.loadImage(loadPic);
         console.log("load image:", loadPic)
         Laya.stage.addChild(this.sp); 
 
-        var img:Laya.Image = new Laya.Image();
-        img.skin = loadPic;
-        //添加到舞台上显示
-        // Laya.stage.addChild(img);
-
-        Laya.timer.once(100, this, this.onClick);    
+        Laya.timer.once(1, this, this.onClick);    
     }           
 
     onClick():void
     {
         //HTMLCanvas 是 Html Canvas 的代理类，封装了 Canvas 的属性和方法。。请不要直接使用 new HTMLCanvas！
         //此处将canvas指定区域进行截屏
-        var htmlC:HTMLCanvas = this.sp.drawToCanvas(300,300,0,0);
+        const data = this.datas[this.index]
+        const pic = data[0]
+        const h = data[1]
+        const w = data[2]
+        const loadPic = this.prefix + pic
+
+        var htmlC:HTMLCanvas = this.sp.drawToCanvas(w,h,0,0);
         //获取截屏区域的texture
         var _texture:Texture = new Texture(htmlC);
 
         var a = document.createElement("a");
         a.href = htmlC.getCanvas().toDataURL();
-        a.download = "test444";
-        a.click();        
+        a.download = loadPic;
+        a.click();    
+
+        this.index = this.index + 1
+        this.checkCreateFile()    
     }    
 }
 new GameMain();

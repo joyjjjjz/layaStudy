@@ -102,7 +102,9 @@ class GameMain{
         const pic = data[0]
         const h = data[1]
         const w = data[2]
-        const loadPic = this.srcFile + "/" + pic
+        var strDir = this.srcFile
+        strDir.replace("/", "{1}")
+        const loadPic = strDir + "{2}" + pic
 
         var htmlC:HTMLCanvas = this.sp.drawToCanvas(w,h,0,0);
         //获取截屏区域的texture

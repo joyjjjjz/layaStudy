@@ -1,0 +1,17 @@
+res/atlas/comp/dialog/itemtips
+res/atlas/comp/dialog/map
+res/atlas/comp/dialog/role
+res/atlas/comp/dialog/skill
+res/atlas/comp/main/header
+res/atlas/comp/main/joy
+res/atlas/comp/main/joybtn
+res/atlas/comp/main/log
+res/atlas/comp/main/main
+res/atlas/comp/main/minimap
+res/atlas/comp/main/npctalk
+res/atlas/comp/main/other
+res/atlas/comp/main/shortcut
+res/atlas/comp/main/topheader
+res/atlas/comp/scene/createrole
+res/atlas/comp/scene/loading
+res/atlas/comp/scene/login

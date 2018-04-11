@@ -150,6 +150,7 @@ var GameMap;
                 }
                 nIndex++;
             }
+            //Y坐标增加了，显示顺序应当向上移动
             else if (NewY > OldY) {
                 nIndex++;
                 while (nIndex < nCount) {
@@ -180,6 +181,7 @@ var GameMap;
                 }
                 nIndex--;
             }
+            //Y方向没有变化，X方向坐标减少了，显示顺序应当向前移动
             else if (NewX < OldX) {
                 nIndex++;
                 while (nIndex < nCount) {
@@ -201,6 +203,7 @@ var GameMap;
                 }
                 nIndex--;
             }
+            //Y方向没有变化，X方向坐标增加了，显示顺序应当向后移动
             else if (NewX > OldX) {
                 nIndex--;
                 while (nIndex > -1) {

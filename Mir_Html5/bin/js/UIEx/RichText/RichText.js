@@ -133,17 +133,17 @@ var UI;
                     continue;
                 }
                 switch (parseInt(szAttr[1])) {
-                    case UI.RichTextComponentType.Label://标签
+                    case UI.RichTextComponentType.Label: //标签
                         {
                             ui_1 = new UI.RichTextLabel(this);
                             break;
                         }
-                    case UI.RichTextComponentType.Image://图片
+                    case UI.RichTextComponentType.Image: //图片
                         {
                             ui_1 = new UI.RichTextImage(this);
                             break;
                         }
-                    case UI.RichTextComponentType.Emotion://表情
+                    case UI.RichTextComponentType.Emotion: //表情
                         {
                             ui_1 = new UI.RichTextAnimation(this, UI.RichTextAnimationType.Emotion);
                             break;

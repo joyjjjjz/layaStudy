@@ -154,7 +154,7 @@ var Entity;
         };
         CustomEntity.prototype.DispatchActorMsg = function (msg) {
             switch (msg._Ident) {
-                case Entity.ActorMessages.AM_PROPERTY_CHANGE://实体属性被改变
+                case Entity.ActorMessages.AM_PROPERTY_CHANGE: //实体属性被改变
                     {
                         if (msg._Data == null) {
                             break;
@@ -162,7 +162,7 @@ var Entity;
                         this.ChangePropertys(msg._Data);
                         break;
                     }
-                case Entity.ActorMessages.AM_DISAPPEAR://实体消失
+                case Entity.ActorMessages.AM_DISAPPEAR: //实体消失
                     {
                         this.m_boDisappeared = true;
                         break;
@@ -389,7 +389,7 @@ var Entity;
                 return;
             }
             switch (type) {
-                case Config.EffectType.meOnWeapon://挥洒八方向特效
+                case Config.EffectType.meOnWeapon: //挥洒八方向特效
                     {
                         var nFrameCount = pack.GetFrameCount() / 8;
                         var nStartFrame = nFrameCount * this.GetDirection();
@@ -398,7 +398,7 @@ var Entity;
                         break;
                     }
                 case Config.EffectType.meKeepOnBody:
-                case Config.EffectType.meKeepOnFeet://脚下持续
+                case Config.EffectType.meKeepOnFeet: //脚下持续
                     {
                         var nStartFrame = 0;
                         var nEndFrame = pack.GetFrameCount();

@@ -146,7 +146,7 @@ var Entity;
                         dwActionTime = this.GetMoveSpeed();
                         break;
                     }
-                case Entity.StandardActions.SA_IDLE://空闲状态
+                case Entity.StandardActions.SA_IDLE: //空闲状态
                     {
                         break;
                     }
@@ -156,13 +156,13 @@ var Entity;
                         this.m_nEndAttackPause = -1; //攻击动作停顿
                         break;
                     }
-                case Entity.StandardActions.SA_READY_ATTACK://攻击停顿
+                case Entity.StandardActions.SA_READY_ATTACK: //攻击停顿
                     {
                         nFrameCount = 1;
                         dwActionTime = Config.GlobalConfig.HITPAUSETIME;
                         break;
                     }
-                case Entity.StandardActions.SA_SPELL://技能攻击
+                case Entity.StandardActions.SA_SPELL: //技能攻击
                     {
                         this.m_nEndAttackPause = -1; //施法动作停顿
                         break;
@@ -267,12 +267,15 @@ var Entity;
                     }
                 }
             }
+            //检查攻击停留的超时，主要用于允许主角的下一次本地逻辑控制
             else if (this.m_nEndAttackPause > 0 && Config.GlobalConfig.s_dwUpdateTick >= this.m_nEndAttackPause) {
                 this.m_nEndAttackPause = 0;
             }
+            //等待设置为攻击停留
             else if (this.m_nEndAttackPause == -1) {
                 this.SetToReadyAction(Entity.StandardActions.SA_READY_ATTACK);
             }
+            //施法停留
             else if (this.m_nEndAttackPause == -3) {
                 this.SetToReadyAction(Entity.StandardActions.SA_PREPARESKILL);
             }

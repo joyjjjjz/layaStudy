@@ -10,6 +10,7 @@ class GameMain{
     private m_Sprite:Laya.Sprite = null;
     constructor()
     {
+        console.log("main start")
         //Laya.timer.loop(5000,this,this.onTimerStart);
  
        // this.onTimerStart();

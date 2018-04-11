@@ -165,12 +165,13 @@ var LogicManager = /** @class */ (function () {
                             if (sprite == null) {
                                 continue;
                             }
-                            if (sprite.hitTestPoint(x, y)) {
+                            if (sprite.hitTestPoint(x, y)) //怪物和NPC有影子的，集成在了身体上所以这个不太好处理
+                             {
                                 return pEntity;
                             }
                             break;
                         }
-                    case Entity.EntityType.DropItem://掉落道具
+                    case Entity.EntityType.DropItem: //掉落道具
                         {
                             var pDropItem = pEntity;
                             if (pDropItem.GetSpriteIcon() != null) {
@@ -215,12 +216,14 @@ var LogicManager = /** @class */ (function () {
             }
             return false;
         }
+        //与NPC对话
         else if (pEntity != null && pEntity.GetEntityType() == Entity.EntityType.Npc) {
             // let msgNpcPack = new ClientMsgPack.LogicPack.NpcTalkMsgPack();
             // msgNpcPack._Handle = pEntity.GetHandle();
             // Net.MsgSender.SendDataByPack(msgNpcPack);
             return false;
         }
+        //掉落道具
         else if (pEntity == null || (pEntity != null && pEntity.GetEntityType() == Entity.EntityType.DropItem)) {
             if (pEntity != null) {
                 pPlay.AutoFindPath(pEntity.GetCurentX(), pEntity.GetCurrentY(), null, null);

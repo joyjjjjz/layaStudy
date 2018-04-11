@@ -41,22 +41,22 @@ var Config;
                 if (pData != null) {
                     var pCfg = null;
                     switch (this.m_LoadItem[i].CType) {
-                        case Config.ConfigType.Skill://技能配置文件
+                        case Config.ConfigType.Skill: //技能配置文件
                             {
                                 pCfg = new Config.SkillConfig();
                                 break;
                             }
-                        case Config.ConfigType.Effect://特效配置文件
+                        case Config.ConfigType.Effect: //特效配置文件
                             {
                                 pCfg = new Config.EffectConfig();
                                 break;
                             }
-                        case Config.ConfigType.Item://道具配置文件
+                        case Config.ConfigType.Item: //道具配置文件
                             {
                                 pCfg = new Config.ItemConfig();
                                 break;
                             }
-                        case Config.ConfigType.Npc://npc配置文件
+                        case Config.ConfigType.Npc: //npc配置文件
                             {
                                 pCfg = new Config.NpcConfig();
                                 break;

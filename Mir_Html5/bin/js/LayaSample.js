@@ -1,7 +1,6 @@
 // 程序入口
 var GameMain = /** @class */ (function () {
     function GameMain() {
-        //Laya.timer.loop(5000,this,this.onTimerStart);
         //private sMapAddr:string  = "http://cdn.zr2.51.com/v1/map/122BiQiCheng.wwm";
         this.sMapAddr = "./data/map/122BiQiCheng.wwm";
         this.Ani = null;
@@ -9,6 +8,8 @@ var GameMain = /** @class */ (function () {
         this.m_nFrameTick = 0;
         this.rich = null;
         this.m_Sprite = null;
+        console.log("main start");
+        //Laya.timer.loop(5000,this,this.onTimerStart);
         // this.onTimerStart();
         this.OnStart();
     }
@@ -117,7 +118,7 @@ var GameMain = /** @class */ (function () {
     GameMain.prototype.onKeyUp = function (e) {
         var keyCode = e["keyCode"];
         switch (keyCode) {
-            case 38://上光标键
+            case 38: //上光标键
                 {
                     // let Player:Entity.Player =Entity.Player.GetInstance();
                     // let pPath:GameMap.MapPath  = GameMap.CustomGameMap.GetInstance().GetMapPath();

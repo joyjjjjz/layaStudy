@@ -8,7 +8,7 @@ var GameMain = /** @class */ (function () {
         this.m_nFrameTick = 0;
         this.rich = null;
         this.m_Sprite = null;
-        Laya.init(600, 400);
+        console.log("main start");
         //Laya.timer.loop(5000,this,this.onTimerStart);
         // this.onTimerStart();
         this.OnStart();

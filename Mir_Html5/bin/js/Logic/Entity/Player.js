@@ -175,7 +175,8 @@ var Entity;
                     }
                 }
             }
-            else if (this.m_ArrAutoPath != null) {
+            else if (this.m_ArrAutoPath != null) //自动寻路
+             {
                 if (this.m_ArrAutoPath.length == 0) {
                     //寻路与npc对话
                     if (this.m_AutoPathNpcInfo != null) {
@@ -190,7 +191,7 @@ var Entity;
                         var pEntity = LogicManager.GetInstance().FindEntity(this.m_AutoPathEntityHandle);
                         if (pEntity != null) {
                             switch (pEntity.GetEntityType()) {
-                                case Entity.EntityType.DropItem://拾取道具
+                                case Entity.EntityType.DropItem: //拾取道具
                                     {
                                         // let pDropItem:Entity.DropItem = pEntity as Entity.DropItem;
                                         // Net.MsgSender.SendLootItem(pDropItem.GetPacketId());
@@ -517,7 +518,7 @@ var Entity;
         Player.prototype.UpdatePropertys = function (id, value) {
             _super.prototype.UpdatePropertys.call(this, id, value);
             switch (id) {
-                case Entity.enPropEntity.PROP_CREATURE_LEVEL://更新等级
+                case Entity.enPropEntity.PROP_CREATURE_LEVEL: //更新等级
                     {
                         var pHeaderDialog = UI.UIManager.GetInstance().GetHeaderDialog();
                         if (pHeaderDialog != null) {
@@ -525,7 +526,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_ACTOR_VOCATION://更新职业
+                case Entity.enPropEntity.PROP_ACTOR_VOCATION: //更新职业
                     {
                         var pHeaderDialog = UI.UIManager.GetInstance().GetHeaderDialog();
                         if (pHeaderDialog != null) {
@@ -533,7 +534,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_CREATURE_HP://更新当前血量
+                case Entity.enPropEntity.PROP_CREATURE_HP: //更新当前血量
                     {
                         var pHeaderDialog = UI.UIManager.GetInstance().GetHeaderDialog();
                         if (pHeaderDialog != null) {
@@ -541,7 +542,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_CREATURE_MAXHP://最大血量
+                case Entity.enPropEntity.PROP_CREATURE_MAXHP: //最大血量
                     {
                         var pHeaderDialog = UI.UIManager.GetInstance().GetHeaderDialog();
                         if (pHeaderDialog != null) {
@@ -557,7 +558,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_CREATURE_MAXMP://最大血量
+                case Entity.enPropEntity.PROP_CREATURE_MAXMP: //最大血量
                     {
                         var pHeaderDialog = UI.UIManager.GetInstance().GetHeaderDialog();
                         if (pHeaderDialog != null) {
@@ -565,7 +566,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_ACTOR_COIN://金币
+                case Entity.enPropEntity.PROP_ACTOR_COIN: //金币
                     {
                         var pTopHeaderDialog = UI.UIManager.GetInstance().GetTopHeaderDialog();
                         if (pTopHeaderDialog != null) {
@@ -573,7 +574,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_ACTOR_BIND_COIN://绑定金币
+                case Entity.enPropEntity.PROP_ACTOR_BIND_COIN: //绑定金币
                     {
                         var pTopHeaderDialog = UI.UIManager.GetInstance().GetTopHeaderDialog();
                         if (pTopHeaderDialog != null) {
@@ -581,7 +582,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_ACTOR_YUANBAO://元宝
+                case Entity.enPropEntity.PROP_ACTOR_YUANBAO: //元宝
                     {
                         var pTopHeaderDialog = UI.UIManager.GetInstance().GetTopHeaderDialog();
                         if (pTopHeaderDialog != null) {
@@ -589,7 +590,7 @@ var Entity;
                         }
                         break;
                     }
-                case Entity.enPropEntity.PROP_ACTOR_BIND_YUANBAO://绑定元宝
+                case Entity.enPropEntity.PROP_ACTOR_BIND_YUANBAO: //绑定元宝
                     {
                         var pTopHeaderDialog = UI.UIManager.GetInstance().GetTopHeaderDialog();
                         if (pTopHeaderDialog != null) {

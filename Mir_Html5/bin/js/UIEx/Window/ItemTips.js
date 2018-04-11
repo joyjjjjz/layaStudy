@@ -76,7 +76,7 @@ var UI;
         };
         ItemTips.prototype.onBtn1Click = function () {
             switch (this.m_ShowType) {
-                case ShowItemTipsType.RoleBag://丢弃
+                case ShowItemTipsType.RoleBag: //丢弃
                     {
                         //Net.MsgSender.SendDeleteItem(this.m_pUserItem._Series);
                         break;

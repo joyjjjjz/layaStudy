@@ -63,7 +63,7 @@ var Entity;
                         dwActionTime = this.GetMoveSpeed();
                         break;
                     }
-                case Entity.StandardActions.SA_IDLE://空闲状态
+                case Entity.StandardActions.SA_IDLE: //空闲状态
                     {
                         break;
                     }

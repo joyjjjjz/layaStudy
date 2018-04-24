@@ -39,6 +39,7 @@ module Config
                 {
                     let pStdSkill:StdSkill = new StdSkill();
                     pStdSkill.DeSerialize(pack);
+                    console.log("skill config, skill id, lv:", pStdSkill._nID, pStdSkill._bLevel)
                     this.m_ArrSkill.push(pStdSkill);
                 }
             }

@@ -38,6 +38,7 @@ var Entity;
             _this.m_ArrAutoPath = null; //自动寻路路径
             _this.m_AutoPathNpcInfo = null; //自动寻路npc信息
             _this.m_AutoPathEntityHandle = null; //自动寻路实体信息
+            _this.m_nCount = 0;
             _this.m_Type = Entity.EntityType.Player;
             return _this;
         }
@@ -120,7 +121,14 @@ var Entity;
             else if (this.m_AttackTarget > 0) {
                 var pAttackEntity = this.GetAttackTarget();
                 if (pAttackEntity != null && !pAttackEntity.IsDie() && !pAttackEntity.IsDisappeared()) {
-                    this.m_NextUseSkill = null;
+                    // this.m_NextUseSkill = null; //todo
+                    this.m_NextUseSkill = new Config.UserSkillInfo();
+                    this.m_NextUseSkill._nSkillID = 2;
+                    this.m_NextUseSkill._bLevel = 1;
+                    if (this.m_nCount % 50000 == 0) {
+                        this.m_NextUseSkill = null;
+                    }
+                    this.m_nCount += 1;
                     if (this.m_NextUseSkill == null) {
                         console.log("m_NextUseSkill == null");
                     }

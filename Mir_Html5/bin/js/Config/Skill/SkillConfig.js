@@ -44,6 +44,7 @@ var Config;
                 for (var j = 0; j < nSkillLevel; j++) {
                     var pStdSkill = new Config.StdSkill();
                     pStdSkill.DeSerialize(pack);
+                    console.log("skill config, skill id, lv:", pStdSkill._nID, pStdSkill._bLevel);
                     this.m_ArrSkill.push(pStdSkill);
                 }
             }

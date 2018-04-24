@@ -34,6 +34,7 @@ module Entity
         private m_ArrAutoPath:any = null;   //自动寻路路径
         private m_AutoPathNpcInfo:Config.StdNpc = null; //自动寻路npc信息
         private m_AutoPathEntityHandle:number = null;    //自动寻路实体信息
+        private m_nCount:number = 0;
         public static SetInsatnce(play:Player):void
         {
             Player._Instance = play;
@@ -150,7 +151,15 @@ module Entity
                 let pAttackEntity:CustomEntity = this.GetAttackTarget();
                 if(pAttackEntity != null && !pAttackEntity.IsDie() && !pAttackEntity.IsDisappeared())
                 {
-                    this.m_NextUseSkill = null;
+                    // this.m_NextUseSkill = null; //todo
+                    this.m_NextUseSkill = new Config.UserSkillInfo()
+                    this.m_NextUseSkill._nSkillID = 2
+                    this.m_NextUseSkill._bLevel = 1
+                    if (this.m_nCount % 50000 == 0)
+                    {
+                        this.m_NextUseSkill = null
+                    }
+                    this.m_nCount += 1
                     if( this.m_NextUseSkill == null)
                     {
                          console.log("m_NextUseSkill == null");

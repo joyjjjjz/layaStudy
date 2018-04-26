@@ -9,8 +9,8 @@ ui_sample: LayaAir UI示例项目
 		Laya.loader.load("res/atlas/comp.atlas", Handler.create(null, onLoaded));
 		图集加载后调用方法："skin":"comp/bg.png"
 
-my_air_war：重新导入的官方打飞机demo
-
+my_air_war：重新导入的官方打飞机demo（layaair-examples）
+	
 Mir_Html5：参考“基于layabox的传奇类手游demo”
 	https://github.com/dream-young-soul/h5_mir
 	
